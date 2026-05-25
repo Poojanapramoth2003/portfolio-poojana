@@ -1,0 +1,63 @@
+POOJANA P.S
+Python Django Developer
+
+Location: Trivandrum, Kerala
+Phone: 8848540533
+Email: poojanapramoth17@gmail.com
+LinkedIn: https://www.linkedin.com/in/poojana-pramoth
+GitHub: https://github.com/pooj178/
+
+SUMMARY
+Dedicated Python/Django and full-stack developer with hands-on experience in
+Django, REST APIs, SQL, responsive frontends, and AI-powered workflows. Skilled
+at building clean, practical web applications with strong debugging resilience,
+clean code habits, and creative problem solving.
+
+TECHNICAL SKILLS
+Backend: Python, OOP, data structures, exception handling, Django, Django ORM
+API Development: REST API design, integration, JSON, Django REST Framework
+Frontend: React, JavaScript, HTML, CSS, Bootstrap, responsive layouts
+Database: SQL CRUD operations, models, migrations, queries, optimization
+Tools: Git, GitHub, branching, collaborative workflows, project management
+AI Workflow: Claude AI, ChatGPT, prompt engineering, API integration, automation
+
+EXPERIENCE
+Python/Django Developer Trainee
+Luminar Technolab, Trivandrum
+Nov 2025 - Ongoing
+
+- Developed and optimized Django applications with clean template organization
+  and static file integration.
+- Designed SQL databases with CRUD operations and query optimization.
+- Built responsive front-end layouts using HTML, CSS, and Bootstrap.
+- Practiced collaborative development workflows using Git and GitHub.
+
+PROJECTS
+Cake Tales
+Web Application | Group Project
+GitHub: https://github.com/pooj178/Cake-Tales-Project-Poojana
+
+Collaborated in a team of 5 to build a Django cake ordering platform with
+database operations and CRUD features for users, products, and orders.
+
+Eat Express
+Food Delivery Web Application
+GitHub: http://github.com/Poojanapramoth2003/EatExpress-Food-Delivery
+
+Developed a full-stack Django app with authentication, food listing, search,
+cart, wishlist, order placement, Django ORM data handling, and responsive
+Bootstrap interfaces.
+
+EDUCATION
+Bachelor of Computer Applications
+East West Group of Management, Bangalore University
+Sep 2021 - Nov 2024 | 8.0 CGPA
+
+Higher Secondary Education
+Samuel LMS Higher Secondary School, Kerala State Board
+Jun 2019 - Jun 2021 | 87%
+
+CERTIFICATIONS
+- Ethnotech Academy - Artificial Intelligence & Machine Learning
+- YHILLS - Cloud Computing
+- G-Tech Institute - Computer Operation
