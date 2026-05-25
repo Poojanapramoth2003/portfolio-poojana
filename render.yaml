@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: poojana-portfolio
+    runtime: python
+    plan: free
+    buildCommand: bash build.sh
+    startCommand: gunicorn portfolio.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13.13"
+      - key: DEBUG
+        value: "False"
+      - key: SECURE_SSL_REDIRECT
+        value: "True"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: ".onrender.com,127.0.0.1,localhost"
