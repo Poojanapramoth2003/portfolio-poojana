@@ -31,13 +31,42 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: .python-version
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build static site
+        env:
+          DEBUG: "False"
+          SECRET_KEY: github-pages-static-build-secret-key-with-enough-length-1234567890
+          ALLOWED_HOSTS: "poojanapramoth2003.github.io"
+          SECURE_SSL_REDIRECT: "True"
+          STATIC_URL: "/portfolio-poojana/static/"
+        run: |
+          python manage.py collectstatic --noinput
+          mkdir -p _site
+          cp -r staticfiles _site/static
+          python - <<'PY'
+          import os
+          from pathlib import Path
+
+          os.environ.setdefault("DJANGO_SETTINGS_MODULE", "portfolio.settings")
+
+          import django
+          from django.template.loader import render_to_string
+
+          django.setup()
+          html = render_to_string("app/home.html")
+          Path("_site/index.html").write_text(html, encoding="utf-8")
+          PY
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
